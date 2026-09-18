@@ -1,1 +1,187 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ቤተ ሊቃውንት</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Ethiopic", sans-serif;
+      background: #f7f4ee;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #173b2c, #285b43);
+      color: white;
+      padding: 18px 6%;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 3px 12px rgba(0,0,0,.15);
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #d8b45a;
+      color: #173b2c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      border: 3px solid white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #f1ce72;
+    }
+
+    .hero {
+      min-height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background:
+        linear-gradient(rgba(23,59,44,.86), rgba(23,59,44,.86)),
+        radial-gradient(circle at center, #d8b45a, #173b2c);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 72px);
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      color: #f1ce72;
+      font-size: clamp(20px, 4vw, 32px);
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: .95;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 13px 27px;
+      background: #d8b45a;
+      color: #173b2c;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #f1ce72;
+    }
+
+    section {
+      padding: 70px 6%;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .title {
+      text-align: center;
+      color: #173b2c;
+      font-size: 34px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      text-align: center;
+      border-top: 4px solid #d8b45a;
+    }
+
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      color: #173b2c;
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .about {
+      background: #eee9df;
+    }
+
+    .about-box {
+      max-width: 850px;
+      margin: auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .contact {
+      text-align: center;
+   
